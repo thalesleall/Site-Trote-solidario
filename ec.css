@@ -1,66 +1,43 @@
 body {
-  background: url(./assets/bg-kid.jpg) no-repeat top center/cover;
+  background: url(./assets/bg-kid.jpg) no-repeat fixed  bottom center/cover;
+  background-size: cover;
   height: 100vh;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body * {
+  font-family: "Inter", sans-serif;
 }
+
 
 
 #container{
-  width: 1050px;
   padding: 10px 50px 20px;
   margin: 35px auto;
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 5px white solid;
   border-radius: 20px;
+  width: 100%;
+  max-width: 950px;
+  padding: 0 24px;
 }
 
 .adds{
   display:none;
 }
-
-
-
-#tabela{
-  border-collapse: collapse;
-  letter-spacing: 1px;
-  font-size: 0.8rem;
-  font-family: 'Poppins', sans-serif;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-#cabecalho{
-  background-color: black;
-  color: white  
+#profile {
+  text-align: center;
+  padding: 24px;
 }
 
-#amarela{
-  background-color: yellow  ;
-  color: black;
-}
-#Laranja{
-  background-color: orange  ;
-  color: black;
-}
-#Roxa{
-  background-color: purple  ;
-  color: black;
-}
-#Verde{
-  background-color: green  ;
-  color: black;
-}
-#Vermelha{
-  background-color: red  ;
-  color: black;
+#profile img {
+  width: 112px;
 }
 
-caption {
-  padding: 10px;
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
+
 
 #titulo{
   align-items: center;
@@ -69,11 +46,32 @@ caption {
 }
 
 #calculadora{
-  color: black;
+  color: white;
   display: flex;
   margin-top: 25;
   gap:10px;
   align-items: center;
+  justify-content: center;
+}
+
+#Adicional{
+  color: white;
+  display: flex;
+  margin-top: 25;
+  gap:10px;
+  align-items: center;
+  justify-content: center;  
+}
+#adicional button{
+  color:black;  
+}
+#pontos{
+  color: white;
   display: flex;
   justify-content: center;
+  margin: 20px 20px 20px 20px;
+}
+#buttonPontos{
+  margin-top: 4px;
+  border-radius: 10px;
 }

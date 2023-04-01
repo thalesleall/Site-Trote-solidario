@@ -22,58 +22,11 @@
       </head>
       <body>
         <div id="container">
-          
-          <div id="tabela">
-            <table>
-              <tr id="cabecalho">
-                <td>Equipe</td>
-                <td>Curso</td>
-                <td>Sala de entrega</td>
-                <td>Apresentação</td>
-                <td>Entidade</td>
-              </tr>
-              <tr id="amarela">
-                <td>Amarela</td>
-                <td>Ciencias Contabeis; Engenharia de software</td>
-                <td>18</td>
-                <td>1° Equipe</td>
-                <td>Creche</td>
-              </tr>
-              <tr id="Laranja">
-                <td>Laranja</td>
-                <td>Administração Diurno; Administrção Noturno;<br> Comunicação Social</br></td>
-                <td>19</td>
-                <td>2° Equipe</td>
-                <td>Lar de Idosos</td>
-              </tr>
-              <tr id="Roxa">
-                <td>Roxa</td>
-                <td>Enfermagem; Medicina</td>
-                <td>20</td>
-                <td>3° Equipe</td>
-                <td>Deficientes Visuais</td>
-              </tr>
-              <tr id="Verde">
-                <td>Verde</td>
-                <td>Letras; Matematica; Psicologia</td>
-                <td>21</td>
-                <td>4° Equipe</td>
-                <td>Pacientes com Câncer</td>
-              </tr>
-              <tr id="Vermelha">
-                <td>Vermelha</td>
-                <td>Ciência da Computação; Engenharia Civil; <br>Engenharia de Produção; Sistemas de informação </br></td>
-                <td>22</td>
-                <td>5° Equipe</td>
-                <td>Portadores de Necessidades <br>Especiais</br></td>
-              </tr>
-              
-
-
-            </table>
-
-            </ul>
-          </div>
+          <div id="profile">
+            <img src="./assets/trote (1).png " alt="Logo do trote solidario" />
+            <p>@trotesolidariounifacef</p>
+          </div>  
+          <img src="./assets/table.png" width="100%" height="100%">
           
           <div id="calculadora" align="center">
           <div>
@@ -115,13 +68,11 @@
                   <input type="number" id="qtdeOleo" placeholder="Quantidade"/>
                   </div>
         
-            <button onclick="condicional()">Calcular os pontos</button>
-          </div>
-              
-              <div>
-              <p id="pontos"> </p>
-              </div>
-
+            <button id="buttonPontos" onclick="condicional()">Calcular os pontos</button>
+          </div>    
+        </div>
+        <div>
+          <p id="pontos"> </p>
           </div>
         </div>
       </body>
