@@ -1,0 +1,79 @@
+body {
+  background: url(./assets/bg-kid.jpg) no-repeat top center/cover;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#container{
+  width: 1050px;
+  padding: 10px 50px 20px;
+  margin: 35px auto;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.adds{
+  display:none;
+}
+
+
+
+#tabela{
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#cabecalho{
+  background-color: black;
+  color: white  
+}
+
+#amarela{
+  background-color: yellow  ;
+  color: black;
+}
+#Laranja{
+  background-color: orange  ;
+  color: black;
+}
+#Roxa{
+  background-color: purple  ;
+  color: black;
+}
+#Verde{
+  background-color: green  ;
+  color: black;
+}
+#Vermelha{
+  background-color: red  ;
+  color: black;
+}
+
+caption {
+  padding: 10px;
+}
+
+#titulo{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#calculadora{
+  color: black;
+  display: flex;
+  margin-top: 25;
+  gap:10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

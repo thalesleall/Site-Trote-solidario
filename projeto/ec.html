@@ -1,0 +1,130 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <!DOCTYPE html>
+    <html lang="pt-br" class="light">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="icon" type="imagem/png" href="./assets/trote (1).png" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Equipes e Calculadora</title>
+        <link rel="stylesheet" href="./ec.css" />
+        
+      </head>
+      <body>
+        <div id="container">
+          
+          <div id="tabela">
+            <table>
+              <tr id="cabecalho">
+                <td>Equipe</td>
+                <td>Curso</td>
+                <td>Sala de entrega</td>
+                <td>Apresentação</td>
+                <td>Entidade</td>
+              </tr>
+              <tr id="amarela">
+                <td>Amarela</td>
+                <td>Ciencias Contabeis; Engenharia de software</td>
+                <td>18</td>
+                <td>1° Equipe</td>
+                <td>Creche</td>
+              </tr>
+              <tr id="Laranja">
+                <td>Laranja</td>
+                <td>Administração Diurno; Administrção Noturno;<br> Comunicação Social</br></td>
+                <td>19</td>
+                <td>2° Equipe</td>
+                <td>Lar de Idosos</td>
+              </tr>
+              <tr id="Roxa">
+                <td>Roxa</td>
+                <td>Enfermagem; Medicina</td>
+                <td>20</td>
+                <td>3° Equipe</td>
+                <td>Deficientes Visuais</td>
+              </tr>
+              <tr id="Verde">
+                <td>Verde</td>
+                <td>Letras; Matematica; Psicologia</td>
+                <td>21</td>
+                <td>4° Equipe</td>
+                <td>Pacientes com Câncer</td>
+              </tr>
+              <tr id="Vermelha">
+                <td>Vermelha</td>
+                <td>Ciência da Computação; Engenharia Civil; <br>Engenharia de Produção; Sistemas de informação </br></td>
+                <td>22</td>
+                <td>5° Equipe</td>
+                <td>Portadores de Necessidades <br>Especiais</br></td>
+              </tr>
+              
+
+
+            </table>
+
+            </ul>
+          </div>
+          
+          <div id="calculadora" align="center">
+          <div>
+            <h2 id="titulo">Calculadora de pontos</h2>
+            Informe o total de kits entregues
+            <input type="number" id="kits"/>
+          </div>
+          </div>
+          
+          <div id="Adicional" align="center">
+            <div>
+            <h3>Mais de 80 Kits?<button id="yes">Sim</button></h3> 
+                  <div class="adds">
+                  Conjunto padrao (Lata + Kit Alimentação)
+                  <input type="number" id="qtdePadrao" placeholder="Quantidade"/>
+                  <br></br>
+                  Apenas Kit Alimentação
+                  <input type="number" id="qtdeKit" placeholder="Quantidade"/>
+                  <br></br>
+                  Apenas Lata de suplemento
+                  <input type="number" id="qtdeLata" placeholder="Quantidade"/>
+                  <br></br>
+                  Pacote de Arroz 5Kg
+                  <input type="number" id="qtdeArroz5" placeholder="Quantidade"/>
+                  <br></br>
+                  Pacote de Arroz 1Kg
+                  <input type="number" id="qtdeArroz1" placeholder="Quantidade"/>
+                  <br></br>
+                  Pacote de Feijão 2Kg
+                  <input type="number" id="qtdeFeijao2" placeholder="Quantidade"/>
+                  <br></br>
+                  Pacote de Feijão 1Kg
+                  <input type="number" id="qtdeFeijao1" placeholder="Quantidade"/>
+                  <br></br>
+                  Pacote de Macarrão 500g
+                  <input type="number" id="qtdeMacarrao" placeholder="Quantidade"/>
+                  <br></br>
+                  Oléo 900ml
+                  <input type="number" id="qtdeOleo" placeholder="Quantidade"/>
+                  </div>
+        
+            <button onclick="condicional()">Calcular os pontos</button>
+          </div>
+              
+              <div>
+              <p id="pontos"> </p>
+              </div>
+
+          </div>
+        </div>
+      </body>
+      <script src="script.js"></script>
+    </html>
+  </html>
