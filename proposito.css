@@ -1,5 +1,5 @@
 body {
-  background: url(./assets/bg-kid.jpg) no-repeat top center/cover;
+  background: url(./assets/bg-kid.jpg) no-repeat fixed top center/cover;
   height: 100vh;
 }
 
