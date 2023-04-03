@@ -1,5 +1,5 @@
 body {
-  background: url(./assets/bg-kid.jpg) no-repeat fixed  bottom center/cover;
+  background: var(--back-url) no-repeat fixed  bottom center/cover;
   background-size: cover;
   height: 100vh;
 }
@@ -7,14 +7,41 @@ body * {
   font-family: "Inter", sans-serif;
 }
 
+:root {
+  /* variável para a cor do texto inicial*/
+  --text-color: white; 
+  --text-color-inv: black;
+  --back-url: url(./assets/bg-kid-dark.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.203);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+.light {
+ /* variável para a cor do texto*/
+ --text-color: black;
+ --text-color-inv: black;
+ /* variável para o fundo da página*/
+ --back-url: url(./assets/bg-kid-light.jpg);
+  /* variável para a borda dos links do fundo branco */
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  /* variável da superfície do link do fundo branco */
+  --surface-color: rgba(0, 0, 0, 0.05);
+   /* variável do mouse da superfície do link do fundo branco */
+   --surface-color-hover: rgba(0, 0, 0, 0.02);
+   /* variável que evidencia os ícones de rede social no fundo branco */
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+   /* define a imagem do switch */
+   --switch-bg-url: url(./assets/sun.svg);
+}
 
 
 #container{
   padding: 10px 50px 20px;
   margin: 35px auto;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 5px white solid;
-  border-radius: 20px;
   width: 100%;
   max-width: 950px;
   padding: 0 24px;
@@ -26,6 +53,7 @@ body * {
 #profile {
   text-align: center;
   padding: 24px;
+  color: var(--text-color);
 }
 
 #profile img {
@@ -46,7 +74,7 @@ body * {
 }
 
 #calculadora{
-  color: white;
+  color: var(--text-color);
   display: flex;
   margin-top: 25;
   gap:10px;
@@ -55,7 +83,7 @@ body * {
 }
 
 #Adicional{
-  color: white;
+  color: var(--text-color);
   display: flex;
   margin-top: 25;
   gap:10px;
@@ -66,7 +94,6 @@ body * {
   color:black;  
 }
 #pontos{
-  color: white;
   display: flex;
   justify-content: center;
   margin: 20px 20px 20px 20px;
@@ -75,3 +102,41 @@ body * {
   margin-top: 4px;
   border-radius: 10px;
 }
+
+#switch {
+  /*  border: 1px solid red; */
+    position: relative;
+    width: 64px;
+    margin: 4px auto 50px auto;  
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+
+    left: 0; /* vai ficar à esquerda */
+    z-index: 1; /* colocamos o botão em uma camada acima */ 
+    transform: translateY(-50%); /* deslocando no eixo y de 50% para cima*/
+}
+
+/* vai ficar à direita quando tiver a class light */
+.light #switch button {
+    right: 0;
+    left: initial;
+}
+
+#switch span {
+    border: 1px solid var(--stroke-color);
+    display: block; /* troca de inline para block */
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border-radius: 9999px;
+}
+
