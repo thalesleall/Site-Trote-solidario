@@ -84,7 +84,7 @@ body * {
   background-color: var(--highlight-color);
 }
 
-footer a {
+footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 12px;
