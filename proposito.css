@@ -23,7 +23,7 @@ body * {
   --highlight-color: rgba(255, 255, 255, 0.2);
   /* define a imagem do switch */
   --switch-bg-url: url(./assets/moon-stars.svg);
-  --box-text-color: rgba(0, 0, 0, 0.5);
+  --container-bg: rgba(0, 0, 0, 0.5);
 }
 
 .light {
@@ -42,7 +42,7 @@ body * {
   --switch-bg-url: url(./assets/moon-stars.svg);
    /* define a imagem do switch */
    --switch-bg-url: url(./assets/sun.svg);
-   --box-text-color: rgba(255, 255, 255, 0.5);
+   --container-bg: rgba(255   , 255, 255, 0.5);
 }
 
 #container {
@@ -52,17 +52,13 @@ body * {
   margin: 56px auto 0px auto;
   color: (var(--text-color));
   text-align: center;
+  background-color: var(--container-bg);
+    border-radius: 10px;
 }
 #profile img {
   width: 112px;
 }
-#texto_e {
-  background-color:var(--box-text-color);
-  text-align: center;
-  border-radius: 10px;
-  border: 1px var(--stroke-color) solid;
-  margin: 10px auto 10px;
-}
+
 #video {
   position: relative;
   display: inline;
